@@ -20,7 +20,7 @@ The second line contains n space-separated integers a[i].
 
 ## Output Format
 
-Print a single integer denoting the minimum  in . If no such value exists, print .
+Print a single integer denoting the minimum d[i, j] in a. If no such value exists, print -1.
 
 ## Sample Input
 
