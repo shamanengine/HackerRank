@@ -7,3 +7,5 @@ print(bool(-0.0000_001))
 print(12 or 5)
 print(0 or 5)
 
+_name = "Artem"
+print(_name[0:1])
