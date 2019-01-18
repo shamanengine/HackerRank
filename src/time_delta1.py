@@ -12,18 +12,13 @@ import sys
 
 # Complete the time_delta function below.
 def time_delta(t1, t2):
-    import datetime, calendar
+    from datetime import datetime
 
-    def t_to_dt(t):
-        Day, d, m, y, hh, mm, ss, x = t.replace(":", " ").split()
-        m = list(calendar.month_abbr).index(m)
-        tz = datetime.timezone(datetime.timedelta(hours=int(x[:3]), minutes=int(x[3:])))
+    FMT = "%a %d %b %Y %H:%M:%S %z"
+    t1 = datetime.strptime(t1, FMT)
+    t2 = datetime.strptime(t2, FMT)
 
-        return datetime.datetime(int(y), m, int(d), int(hh), int(mm), int(ss), tzinfo=tz)
-
-    delta_seconds = (t_to_dt(t1) - t_to_dt(t2)).total_seconds()
-
-    return str(int(abs(delta_seconds)))
+    return str(abs(int((t1 - t2).total_seconds())))
 
 
 if __name__ == '__main__':
