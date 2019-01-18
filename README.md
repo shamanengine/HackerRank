@@ -17,3 +17,5 @@ Code snipets from [HackerRank](https://www.hackerrank.com/) for some challenges
 15. Closures and Decorators
 16. Numpy
 17. Debugging
+20. Problem Solving
+30. Stuff
