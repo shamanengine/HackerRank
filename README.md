@@ -27,3 +27,4 @@ Code snipets from [HackerRank](https://www.hackerrank.com/) for some challenges
 **_Liked tasks:_**
 * the_minion_game
 * 20_problem_solving/reduced_string
+* 20_problem_solving/caesar_cipher_1
