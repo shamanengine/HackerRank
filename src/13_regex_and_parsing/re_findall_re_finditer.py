@@ -1,7 +1,7 @@
 '''
 Task
 You are given a string s. It consists of alphanumeric characters, spaces and symbols(+,-).
-Your task is to find all the substrings of that contains or more vowels.
+Your task is to find all the substrings of that contains 2 or more vowels.
 Also, these substrings must lie in between consonants and should contain vowels only.
 
 Note:
@@ -16,10 +16,14 @@ Print the matched substrings in their order of occurrence on separate lines.
 If no match is found, print -1.
 '''
 import re
-vowels = r'[AEIOUaeiou]'
-consonants = r'[QWRTYPSDFGHJKLZXCVBNMqwrtypsdfghjklzxcvbnm]'
-s = input()
 
+VOWELS = r'AEIOUaeiou'
+CONSONANTS = r'QWRTYPSDFGHJKLZXCVBNMqwrtypsdfghjklzxcvbnm'
+
+r = r'[%s]([%s]{2,})(?=[%s])' % (CONSONANTS, VOWELS, CONSONANTS)
+
+group = re.findall(r, input())
+print(group if group else "-1")
 
 '''
 Sample Input
@@ -30,5 +34,4 @@ ee
 Ioo
 Oeo
 eeeee
-
 '''
