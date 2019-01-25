@@ -28,4 +28,6 @@ Code snipets from [HackerRank](https://www.hackerrank.com/) for some challenges
 * the_minion_game
 * 20_problem_solving/reduced_string
 * 20_problem_solving/caesar_cipher_1
+* 20_problem_solving/strong_password
 * 13_regex_and_parsing/validate_a_roman_number
+* 13_regex_and_parsing/validating_UID
