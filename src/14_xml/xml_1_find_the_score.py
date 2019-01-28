@@ -12,11 +12,12 @@ import xml.etree.ElementTree as etree
 
 def get_attr_number(node):
     # your code goes here
-    print(node.tag, node.attrib)
-    for child in node:
-        print(child.tag, child.attrib)
-
-    return len(node.attrib) + sum([len(child.attrib) for child in node])
+    '''
+    print("#1", node.tag, node.attrib)
+    for child in node.iter():
+        print("#2", child.tag, child.attrib)
+    '''
+    return sum([len(child.attrib) for child in node.iter()])
 
 '''
 Input
@@ -27,7 +28,7 @@ Input
   <link rel='alternate' type='text/html' href='http://hackerrank.com/'/>
   <updated>2013-12-25T12:00:00</updated>
   <entry>
-  	<author gender='male'>Harsh</author>
+    <author gender='male'>Harsh</author>
     <question type='hard'>XML 1</question>
     <description type='text'>This is related to XML parsing</description>
   </entry>
