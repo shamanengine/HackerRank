@@ -5,13 +5,22 @@ your task is to print an array of the given shape and integer type using the too
 
 import numpy
 
-n, m, p = map(int, input().split())
-zeros = numpy.zeros((n, m), dtype=numpy.int)
-ones = numpy.ones((n, m), dtype=numpy.int)
+# n, m, p = map(int, input().split())
+*args, = map(int, input().split())
 
+zeros = numpy.zeros(args, dtype=numpy.int)
+ones = numpy.ones(args, dtype=numpy.int)
+
+print(zeros, ones, sep='\n')
+
+'''
+print("Zeros", zeros)
+print("Ones", ones)
 arr1 = numpy.array([zeros for _ in range(p)])
 arr2 = numpy.array([ones for _ in range(p)])
-print(arr1, arr2, sep='\n')
+print("=Answer=")
+'''
+
 '''
 Input
 3 2 3
@@ -33,4 +42,60 @@ Expected Output
 
  [[1 1 1]
   [1 1 1]]]
+'''
+'''
+Input
+3 2
+Expected Output
+[[0 0]
+ [0 0]
+ [0 0]]
+[[1 1]
+ [1 1]
+ [1 1]]
+'''
+
+'''
+Input
+3 2 2 2
+
+Output
+[[[[0 0]
+   [0 0]]
+
+  [[0 0]
+   [0 0]]]
+
+
+ [[[0 0]
+   [0 0]]
+
+  [[0 0]
+   [0 0]]]
+
+
+ [[[0 0]
+   [0 0]]
+
+  [[0 0]
+   [0 0]]]]
+[[[[1 1]
+   [1 1]]
+
+  [[1 1]
+   [1 1]]]
+
+
+ [[[1 1]
+   [1 1]]
+
+  [[1 1]
+   [1 1]]]
+
+
+ [[[1 1]
+   [1 1]]
+
+  [[1 1]
+   [1 1]]]]
 '''
