@@ -9,7 +9,23 @@ The next N lines contains the space separated elements of M columns.
 Output Format
 First, print the transpose array and then print the flatten.
 '''
+
 import numpy
+
+N, M = map(int, input().split())
+lst = list()
+for i in range(N):  # rows
+    # for j in M: # columns
+    lst.append(list(map(int, input().split())))
+
+arr = numpy.array(lst)
+
+# print(arr)
+print(numpy.transpose(arr))
+print(arr.flatten())
+
+# our_array = numpy.array([input().split() for y in range(int(input().split()[0]))], int)
+# print(numpy.transpose(our_array), our_array.flatten(), sep="\n")
 
 '''
 Sample Input
