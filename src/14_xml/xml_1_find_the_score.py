@@ -12,11 +12,11 @@ import xml.etree.ElementTree as etree
 
 def get_attr_number(node):
     # your code goes here
-    '''
+
     print("#1", node.tag, node.attrib)
     for child in node.iter():
         print("#2", child.tag, child.attrib)
-    '''
+
     return sum([len(child.attrib) for child in node.iter()])
 
 '''
