@@ -1,4 +1,16 @@
 '''
+A postal code must be a number in the range of ( ).
+A postal code must not contain more than one alternating repetitive digit pair.
+Alternating repetitive digits are digits which repeat immediately after the next digit. In other words, an
+alternating repetitive digit pair is formed by two equal digits that have just a single digit between them.
+
+For example:
+121426 # Here, 1 is an alternating repetitive digit.
+523563 # Here, NO digit is an alternating repetitive digit.
+552523 # Here, both 2 and 5 are alternating repetitive digits.
+Your task is to validate whether is a valid postal code or not.
+
+
 Input Format
 Locked stub code in the editor reads a single string denoting P from stdin and
 uses provided expression and your regular expressions to validate if P is a valid postal code.
