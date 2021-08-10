@@ -1,16 +1,17 @@
 # HackerRank
 Code snipets from [HackerRank](https://www.hackerrank.com/) for some challenges
 
-## 0 Python
-01. Introduction
-02. Basic Data Types
-03. Strings
-04. Sets
-05. Math
-06. Itertools
-07. Collections
-08. Date and Time
-09. Errors and Exceptions
+## Python
+0. Interview Preparation Kit
+1. Introduction
+2. Basic Data Types
+3. Strings
+4. Sets
+5. Math
+6. Itertools
+7. Collections
+8. Date and Time
+9. Errors and Exceptions
 10. Classes
 11. Built-Ins
 12. Python Functionals
@@ -20,7 +21,7 @@ Code snipets from [HackerRank](https://www.hackerrank.com/) for some challenges
 16. Numpy
 17. Debugging
 18. Stuff
-19.
+19. 
 20. Problem Solving
 
 
