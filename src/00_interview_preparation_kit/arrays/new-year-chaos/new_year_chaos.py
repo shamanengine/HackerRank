@@ -9,6 +9,7 @@ import sys
 
 def minimumBribes(q):
     # Write your code here
+    
     pass
 
 
