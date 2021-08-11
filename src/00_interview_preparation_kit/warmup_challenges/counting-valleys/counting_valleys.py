@@ -6,13 +6,14 @@ Sample Output
 1
 '''
 
-#!/bin/python3
+# !/bin/python3
 
 import math
 import os
 import random
 import re
 import sys
+
 
 #
 # Complete the 'countingValleys' function below.
@@ -29,7 +30,7 @@ def countingValleys(steps, path):
     for step in path:
         if step == 'U':
             elev = elev_b + 1
-        elif step =='D':
+        elif step == 'D':
             elev = elev_b - 1
 
         if elev_b == 0 and elev < 0:
@@ -37,6 +38,7 @@ def countingValleys(steps, path):
         elev_b = elev
 
     return count
+
 
 if __name__ == '__main__':
     # fptr = open(os.environ['OUTPUT_PATH'], 'w')

@@ -15,7 +15,7 @@ def repeatedString(s, n):
 
     for l in s[:n % len(s)]:
         if l == 'a':
-            count_t +=1
+            count_t += 1
 
     # res = (n // len(s)) * count + s[:n % len(s)]
     res = (n // len(s)) * count + count_t
